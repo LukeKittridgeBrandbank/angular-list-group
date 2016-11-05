@@ -12,6 +12,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-gh-pages');
     grunt.loadNpmTasks('grunt-karma');
     grunt.loadNpmTasks('grunt-bump');
+    grunt.loadNpmTasks('grunt-release');
 
     grunt.initConfig({
 	pkg : grunt.file.readJSON('package.json'),
@@ -134,15 +135,14 @@ module.exports = function(grunt) {
 	},
 	'gh-pages' : {
 	    options : {
-		base : 'demo',
-		message : 'Auto-generated commit'
+			base : 'demo',
 	    },
 	    src : [ 'index.html', 'app/**', 'bower_components/**', 'partials/**', 'style/**' ]
 	},
-	bump : {
-	    options : {
-		files : [ 'package.json', 'bower.json' ],
-		pushTo : 'origin'
+	release: {
+	    options: {
+	      additionalFiles: ['bower.json'],
+	      npm: false
 	    }
 	}
     });
