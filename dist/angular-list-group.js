@@ -600,7 +600,7 @@ $templateCache.put('edit-inline-input.tpl.html',
 
 
   $templateCache.put('panel-list-group.tpl.html',
-    "<div class=\"panel panel-default\" ng-cloak><div class=\"panel-heading\" ng-if=\"header\"><panel-list-group-title></panel-list-group-title></div><div class=\"panel-body\" ng-if=\"filterable\"><list-group-filter></list-group-filter></div><list-group-html ng-if=\"!selectable\"></list-group-html><linked-list-group-html ng-if=\"selectable\"></linked-list-group-html><!-- \t<div class=\"panel-footer\" ng-if=\"$displayFooter()\" --><!-- \t\tng-bind-html=\"footer\"></div> --></div>"
+    "<div class=\"panel panel-default\" ng-cloak><div class=\"panel-heading\" ng-if=\"header\"><panel-list-group-title></panel-list-group-title></div><div class=\"panel-body\" ng-if=\"filterable\"><list-group-filter></list-group-filter></div><list-group-html ng-if=\"!selectable\"></list-group-html><linked-list-group-html ng-if=\"selectable\"></linked-list-group-html><!-- 	<div class=\"panel-footer\" ng-if=\"$displayFooter()\" --><!-- 		ng-bind-html=\"footer\"></div> --></div>"
   );
 
 }]);

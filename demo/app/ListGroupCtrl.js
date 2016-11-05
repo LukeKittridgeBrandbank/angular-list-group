@@ -107,7 +107,9 @@ demo
 								return promise;
 							}
 
-							$scope.mySelectedItems = $scope.mySelectedItems01 = $scope.mySelectedItems02 = [];
+							$scope.mySelectedItems = [];
+							$scope.mySelectedItems01 = [];
+							$scope.mySelectedItems02 = [];
 
 							// Selection of the 'Red' item is not allowed
 							$scope.beforeSelectionChangeHandler = function(item) {
