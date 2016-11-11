@@ -101,7 +101,7 @@ var ListGroupCtrl = [
 			ctrl.isSelected = function(item) {
 				var idx = -1;
 				for (var i = 0, len = ctrl.$$selectedItems.length; i < len; i++) {
-					if (item === ctrl.$$selectedItems[i] || (JSON.stringify(item) === JSON.stringify(ctrl.$$selectedItems[i]))) {
+					if (item === ctrl.$$selectedItems[i] || JSON.stringify(item) === JSON.stringify(angular.copy(ctrl.$$selectedItems[i]))) {
 						idx = i;
 						break;
 					}
